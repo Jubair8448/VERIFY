@@ -27,7 +27,7 @@ export default function Home() {
       <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-8 border border-green-100">
 
         {/* Brand Trust Header */}
-        <h1 className="text-3xl font-extrabold text-center text-green-700">
+        <h1 className="text-3xl font-extrabold text-center text-red-700">
           Product Authentication
         </h1>
         <p className="text-center text-gray-600 mt-2">
@@ -48,7 +48,7 @@ export default function Home() {
           </label>
           <input
             type="text"
-            placeholder="Example: GOLDY2024"
+            placeholder="Example: xxxx"
             value={code}
             onChange={(e) => setCode(e.target.value)}
             className="mt-2 w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg tracking-wider"
@@ -58,7 +58,7 @@ export default function Home() {
         {/* Button */}
         <button
           onClick={verify}
-          className="w-full mt-6 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition transform hover:scale-[1.02]"
+          className="w-full mt-6 bg-red-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition transform hover:scale-[1.02]"
         >
           Verify Product
         </button>
